@@ -17,14 +17,14 @@
         {
             "language": "markdown",
             "source": [
-                "#####  [Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=true)\n\nSolution:"
+                "#####  [Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=true)\n\nSolution: \n"
             ],
             "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                ""
+                "function birthdayCakeCandles(ar) {\n    var maxHeight = Math.max(...ar);\n    var maxHeightCount = 0;  \n    for(var i = 0; i < ar.length; i++){\n        if (ar[i] == maxHeight){\n            maxHeightCount = maxHeightCount + 1;\n        }\n    }\n    console.log(maxHeightCount);\n    return maxHeightCount;\n}"
             ],
             "outputs": []
         },
