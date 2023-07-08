@@ -24,7 +24,6 @@
 //
 
 const LastWord = (str) => {
-    
     const lastSpaceIndex = str.lastIndexOf(' ');
     const lastWord = str.slice(lastSpaceIndex + 1);
     return lastWord;
@@ -40,8 +39,8 @@ const LastWord = (str) => {
 //  Input: "you dare use my spells against me, potter"
 //  Output: "potter"
 
-const LastWord_2 = (str) => {
 
+const LastWord_2 = (str) => {
     const words = str.split(' ');
     const lastWord = words[words.length - 1];
     return lastWord;
@@ -67,7 +66,6 @@ const LastWord_2 = (str) => {
 //
 
 const replaceWords = (str) => {
-    
     const words = str.split(' ');
     const replacements = {
       'I': 'We',
@@ -86,6 +84,7 @@ const replaceWords = (str) => {
     const replacedString = words.join(' ');
     return replacedString;
 };
+
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
