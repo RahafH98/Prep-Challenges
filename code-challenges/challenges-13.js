@@ -39,33 +39,10 @@
 // Output: 5
 
 const objectCounter = (obj) => {
-  return obj.reduce((count) => count + 1, 0);
-  }
-  
-  var voters = [
-  {
-  voter_Name: "Adam Scott",
-  votes_To: "James",
-  },
-  {
-  voter_Name: "Abril Blake",
-  votes_To: "Jade",
-  },
-  {
-  voter_Name: "Ruby Andrews",
-  votes_To: "Jade",
-  },
-  {
-  voter_Name: "Junior Maxwell",
-  votes_To: "Bailey",
-  },
-  {
-  voter_Name: "Junior Maxwell",
-  votes_To: "Bailey",
-  }
-  ];
-  
-  console.log(objectCounter(voters)); // Output: 5
+    
+     return obj.reduce((count) => count + 1, 0);
+ 
+}
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
@@ -84,15 +61,10 @@ const objectCounter = (obj) => {
 // ------------------------
 
 const stringReverse = (str) => {
-  return str
-  .split(' ')
-  .reduce((reversed, word) => word + ' ' + reversed, '')
-  .trim();
-  }
-  
-  const input = 'you shall not pass';
-  const output = stringReverse(input);
-  console.log(output); // 'pass not shall you'
+    
+    return str.split(' ').reduce((reversed, word) => word + ' ' + reversed, '').trim();
+
+}
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
@@ -135,19 +107,19 @@ const stringReverse = (str) => {
 //
 
 const statistics = (obj) => {
-  return obj.reduce((result, current) => {
-      const candidate = current['votes_To'];
-      if (result.hasOwnProperty(candidate)) {
+ 
+    return obj.reduce((result, current) => {
+      
+        const candidate = current['votes_To'];
+       
+        if (result.hasOwnProperty(candidate)) {
           result[candidate] += 1;
-      } else {
+        } else {
           result[candidate] = 1;
-      }
-      return result;
-  }, {});
-};
-
-const res = statistics(voters);
-console.log(res);
+        }
+        return result;
+    }, {}); 
+}
 // -------------------------------------------------------------------------------------------------------
 
 
